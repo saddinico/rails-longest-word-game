@@ -1,0 +1,60 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.letters ul {
+  list-style-type: none;
+}
+
+.letter {
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  padding-top: 10px;
+  border: 1px solid #039;
+  background-color: #36f;
+  color: white;
+  text-align: center;
+  box-shadow: 2px 2px #dcdcdc;
+  font-weight: bold;
+}
+
+.input {
+  display: flex;
+  height: 30px;
+}
+
+.word-input {
+  flex-grow: 1;
+  padding: 0;
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+  border: 1px solid #eee;
+  padding-left: 10px;
+}
+
+.btn-input {
+  width: 75px;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #eee;
+  font-weight: bold;
+  opacity: 0.8;
+  border-left: none;
+}
+
+p {
+  font-size: 15px;
+}
+
+h4 {
+  text-decoration: none;
+}
+
+
+// <div class="input">
+//   <form action="/score" method="post">
+//     <input type="text" placeholder="Enter your word here" name="word" class="word-input">
+//     <input type="submit" value="Play" class="btn-input">
+//   </form>
+// </div>
