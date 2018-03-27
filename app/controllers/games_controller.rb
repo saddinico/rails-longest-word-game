@@ -20,8 +20,9 @@ class GamesController < ApplicationController
     word_array = @word.upcase.split('')
     letters_array = @letters.split('')
 
-    if (word_array - letters_array) != []
-      @result = "Sorry but #{@word.upcase} cannot be built out of #{@letters}"
+
+    if !(word_array.all? {|letter| word_array.count(letter) <= letters_array.count(letter)})
+      @result = "Sorry but #{@word.upcase} cannot be built out of #{letters_array.join(', ')}"
     elsif json['found'] == false
       @result = "Sorry but #{@word.upcase} does not seem to be a valid English word..."
     else
